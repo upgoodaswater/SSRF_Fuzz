@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Auto-SSRF-master:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Auto_SSRF_master_jar</output-path>
+    <root id="archive" name="Auto-SSRF-master.jar">
+      <element id="module-output" name="Auto-SSRF-master" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.8.16/hutool-all-5.8.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

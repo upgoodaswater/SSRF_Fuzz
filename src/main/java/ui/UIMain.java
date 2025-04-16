@@ -25,8 +25,8 @@ public class UIMain extends JTabbedPane {
         super();
         this.provider = provider;
 
-        this.addTab("扫描概览xx", dashboardTab);
-        this.addTab("插件配置", settingsTab);
+        this.addTab("History", dashboardTab);
+        this.addTab("Setting", settingsTab);
 
         // 主题适配
         applyTheme(this);

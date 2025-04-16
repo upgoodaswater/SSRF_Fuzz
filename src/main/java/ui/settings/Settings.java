@@ -56,7 +56,7 @@ public class Settings {
 
         public void setPayload(String payload) {
             this.payload = payload;
-            logger.logToOutput("设置成功"+payload);
+//            logger.logToOutput("设置成功"+payload);
         }
 
         public String getPayload() {

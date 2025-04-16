@@ -7,7 +7,6 @@ import burp.api.montoya.http.message.requests.HttpRequest;
 import burp.api.montoya.http.message.responses.HttpResponse;
 import common.CollaboratorResult;
 import common.pool.CollaboratorThreadPool;
-import ui.dashboard.StatusEnum;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

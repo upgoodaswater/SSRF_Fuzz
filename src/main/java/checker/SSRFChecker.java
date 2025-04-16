@@ -34,21 +34,19 @@ public enum SSRFChecker {
 
     public void check(HttpRequestResponse baseRequestResponse, Integer id) {
         //HttpRequestResponse,从burp历史中获取数据包
-        logger.logToOutput("获取数据包");
         HttpRequest request = baseRequestResponse.request();
 
-        // 过滤
         if (!filter.filter(baseRequestResponse, id)) {
-            logger.logToOutput("过滤中");
+//            logger.logToOutput("\n过滤逻辑执行\n");
             return;
         }
 
         Settings settings = new Settings();
         String payload=settings.getInstance().getExtensions().getPayload();
-        logger.logToOutput("\npayload\n"+payload);
+//        logger.logToOutput("\npayload:\n"+payload);
 
         //自定义paylaod，待会从控制台获取
-//               String payload = "jiabail.xyz/ssrf";
+//               String payload = "test.com/xxx";
 
         // 参数填充&构建请求
         HttpRequest newRequest = updateParameterAndBuildRequest(
